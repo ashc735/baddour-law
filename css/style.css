@@ -101,6 +101,7 @@ body {
   text-align: left;
   color: #000;
   background: white;
+  width: 100%;
 }
 
 ul {
@@ -114,10 +115,6 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  font-family: 'Lato', sans-serif;
-  font-size: 2.25em;
-}
 h2 {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.875em;
@@ -249,6 +246,42 @@ footer p {
 .copyright {
   text-align: center;
 }
+
+ /*-------------Mobile Styles-Homepage-----------*/
+  
+/*---Hero Area---*/
+
+.hero-area {
+  display: flex;
+  justify-content: center;
+  background: url('../img/gc-courthouse.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 500px;
+ }
+
+ .hero-area .content-wrapper {
+  width: 100%;
+ }
+
+ .hero-area h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 1.2;
+  align-content: center;
+  color:#e2e3ed;
+  margin-top: 175px;
+  background-color: #202322;
+  opacity: 75%;
+ }
+
+
+
 
 /* ==========================================================================
    Helper classes
