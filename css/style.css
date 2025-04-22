@@ -100,7 +100,7 @@ body {
   font-size: 1em;
   text-align: left;
   color: #000;
-  background: white;
+  background: #fff;
   width: 100%;
   margin: 0;
 }
@@ -279,6 +279,133 @@ footer p {
   margin-top: 175px;
   background-color: #202322;
   opacity: 75%;
+ }
+
+ /*---Benefits--Why Choose Styles---*/
+
+ .benefits {
+  background-color: #fff;
+  font-size: 1.25rem;
+  margin: 0;
+ }
+
+ .benefits .content-wrapper {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 15px 15px;
+ }
+
+ .benefits h2 {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+ }
+
+ .benefits-items {
+  display: flex;
+  flex-flow: row wrap; 
+  gap: 15px;
+ }
+
+.benefits-items article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid black 2px;
+  border-radius: 21%;
+  width: 20%;
+  padding: 5px 5px;
+  margin: 10px 10px;
+ }
+
+ .benefits-items img {
+  margin-top: 15px;
+ }
+
+ .benefits-items p {
+  text-align: center;
+  font-size: 1.25rem;
+  margin: 5px 5px;
+ }
+
+ .section-divider {
+  background: #3a3a3a;
+  height: 1px;
+  width: 100%;
+ }
+
+ /*---Reviews Styles---*/
+
+ .reviews {
+  font-size: 1.25rem;
+ }
+
+ .reviews .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  width: 100%;
+  margin: 10px 0 20px 0;
+ }
+
+ .reviews h2 {
+  margin-bottom: 20px;
+  text-align: center;
+ }
+
+ .carousel-container {
+  position: relative;
+  width: 550px;
+  overflow: hidden;
+  padding-bottom: 60px;
+ }
+
+ .carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+ }
+
+ .review-slide {
+  min-width: 100%;
+ }
+
+ .review-slide p {
+  margin: 5px 5px;
+ }
+
+ .carousel-control {
+  position: absolute;
+  top: 90%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  cursor: pointer;
+ }
+
+
+ .prev-button {
+  left: 0;
+ }
+
+ .next-button {
+  right: 0;
+ }
+
+ /*---Footer Styles---*/
+
+ .section-divider {
+  background: #3a3a3a;
+  height: 1px;
+  width: 100%;
+  margin: 10px 0 20px 0;
  }
 
 

@@ -1,29 +1,20 @@
-const slides = document.querySelectorAll('.review-slide');
+const carouselTrack = document.querySelector('.carousel-track');
+const slides = Array.from(document.querySelectorAll('.review-slide'));
 const prevButton = document.querySelector('.prev-button');
 const nextButton = document.querySelector('.next-button');
-let currentSlide = 0;
 
-function showSlide(index) {
-  slides.forEach(slide => slide.classList.remove('active'));
-  slides[index].classList.add('active');
+let currentIndex = 0;
+
+function updateCarousel() {
+ carouselTrack.style.transform = `translateX(-${currentIndex * 100}%)`;
 }
 
-function nextSlide() {
-  currentSlide = (currentSlide + 1) % slides.length;
-  showSlide(currentSlide);
-}
+prevButton.addEventListener('click', () => {
+ currentIndex = Math.max(currentIndex - 1, 0);
+ updateCarousel();
+});
 
-function prevSlide() {
-   currentSlide = (currentSlide -1 + slides.length) % slides.length;
-   showSlide(currentSlide);
-}
-
-prevButton.addEventListener('click', prevSlide);
-nextButton.addEventListener('click', nextSlide);
-
-showSlide(currentSlide);
-
-const yearSpan = document.querySelector('#currentYear');
-const currentYear = new Date();
-
-yearSpan.innerText = currentYear.getFullYear();
+nextButton.addEventListener('click', () => {
+ currentIndex = Math.min(currentIndex + 1, slides.length - 1);
+ updateCarousel();
+});
