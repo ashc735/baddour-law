@@ -408,6 +408,11 @@ footer p {
   right: 0;
  }
 
+ .reviews-link {
+  text-align: center;
+}
+
+
  /*---Footer Styles---*/
 
  .section-divider {
