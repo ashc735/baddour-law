@@ -424,6 +424,94 @@ footer p {
 
 /*------------Mobile Styles-About Page---------------*/
 
+.mission {
+  margin: 0;
+}
+
+.mission .content-wrapper {
+  margin: 15px 15px;
+  font-size: 1.25rem;
+}
+
+.biographies {
+  margin: 15px 15px;
+  font-size: 1.25rem;
+}
+
+.bio-contact {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: start;
+  gap: 10px;
+}
+
+.bio-contact h3 {
+  text-align: center;
+}
+
+.bio-contact ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.bio-content-item {
+  max-width: 1000px;
+  margin: 0;
+  font-family: sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.bio-main {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.bio-main img {
+  width: 180px;
+  height: auto;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.bio-main p {
+  margin: 0;
+}
+
+.bio-education {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+}
+
+.bio-education > div {
+  max-width: 100%;
+}
+
+.bio-education h4 {
+  font-size: 1.5rem;
+}
+
+.bio-content-item p {
+  margin-bottom: 1em;
+}
+
+.bio-content-item img:not(.bio-main img) {
+  height: 24px;
+  vertical-align: middle;
+  margin: 4px 0 0 10px;
+}
+
+
+
+
+
+
 
 
 
