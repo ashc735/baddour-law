@@ -433,6 +433,8 @@ footer p {
   font-size: 1.25rem;
 }
 
+/*---Biographies Styles---*/
+
 .biographies {
   margin: 15px 15px;
   font-size: 1.25rem;
@@ -473,7 +475,7 @@ footer p {
 }
 
 .bio-main img {
-  width: 180px;
+  width: 200px;
   height: auto;
   border-radius: 8px;
   flex-shrink: 0;
@@ -486,7 +488,8 @@ footer p {
 .bio-education {
   display: flex;
   justify-content: center;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
+  align-items:flex-start;
 }
 
 .bio-education > div {
@@ -506,6 +509,8 @@ footer p {
   vertical-align: middle;
   margin: 4px 0 0 10px;
 }
+
+
 
 
 
