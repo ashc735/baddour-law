@@ -18,3 +18,8 @@ nextButton.addEventListener('click', () => {
  currentIndex = Math.min(currentIndex + 1, slides.length - 1);
  updateCarousel();
 });
+
+const yearSpan = document.querySelector('#currentYear');
+const currentYear = new Date();
+
+yearSpan.innerText = currentYear.getFullYear();
