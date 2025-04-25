@@ -422,7 +422,7 @@ footer p {
   margin: 10px 0 20px 0;
  }
 
-/*------------Mobile Styles-About Page---------------*/
+/*------------ Mobile Styles-About Page ---------------*/
 
 .mission {
   margin: 0;
@@ -508,6 +508,46 @@ footer p {
   height: 24px;
   vertical-align: middle;
   margin: 4px 0 0 10px;
+}
+
+/*------ Mobile Styles--Services Page ------*/
+
+.content-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.content-wrapper h2 {
+  margin-bottom: 15px;
+}
+
+.practice-area-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+}
+
+.practice-area {
+  background-color: #e2e3ed;
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.practice-area h4 {
+  font-size: 1.5rem;
+  padding: 10px;
+  margin-left: 5px;
+}
+
+.practice-area p {
+  font-size: 1.25rem;
+  padding: 12px;
+  text-align: left;
 }
 
 
@@ -602,7 +642,10 @@ footer p {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
+   @media (max-width: 768px) {
+    .practice-area {
+      width: 100%; /* Stack on smaller screens */
+    }
 /***** Tablet Styles *****/
 
 /***** Desktop Styles *****/
