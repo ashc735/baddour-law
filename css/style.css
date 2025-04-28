@@ -446,34 +446,47 @@ footer p {
 
 .mission {
   margin: 0;
+  display: flex;
+  flex-flow: column wrap;
 }
 
 .mission .content-wrapper {
-  margin: 15px 15px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
   font-size: 1.25rem;
 }
 
 /*---Biographies Styles---*/
-
 .biographies {
-  margin: 15px 15px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.biography-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
   font-size: 1.25rem;
 }
 
 .bio-contact {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: start;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   gap: 10px;
 }
 
 .bio-contact h3 {
   text-align: center;
+  font-size: 1.655rem;
 }
 
 .bio-contact ul {
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -481,35 +494,39 @@ footer p {
 
 .bio-content-item {
   max-width: 1000px;
-  margin: 0;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px; /* adds side breathing room */
   font-family: sans-serif;
   line-height: 1.6;
   color: #333;
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* space between bio-main and bio-education */
 }
 
 .bio-main {
   display: flex;
-  gap: 20px;
   align-items: flex-start;
-  margin-bottom: 30px;
+  gap: 20px;
+  flex-wrap: nowrap; /* Ensure content stays in one line */
 }
 
 .bio-main img {
   width: 200px;
   height: auto;
   border-radius: 8px;
-  flex-shrink: 0;
+  flex-shrink: 0; /* prevents image from shrinking on small screens */
 }
 
 .bio-main p {
   margin: 0;
+  flex: 1; /* text takes the remaining space */
 }
 
 .bio-education {
-  display: flex;
-  justify-content: center;
-  flex-flow: column nowrap;
-  align-items:flex-start;
+  width: 100%;
+  margin-left: 220px; /* 200px image + 20px gap */
 }
 
 .bio-education > div {
@@ -517,7 +534,9 @@ footer p {
 }
 
 .bio-education h4 {
-  font-size: 1.5rem;
+  font-size: 1.45rem;
+  font-weight: bold;
+  margin-top: 0;
 }
 
 .bio-content-item p {
