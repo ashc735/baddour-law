@@ -278,10 +278,11 @@ footer p {
   font-size: 3em;
   font-weight: 700;
   line-height: 1.2;
-  align-content: center;
+  align-items: center;
   color:#e2e3ed;
   margin-top: 175px;
   background-color: #202322;
+  width: 100%;
   opacity: 75%;
  }
 
@@ -291,6 +292,12 @@ footer p {
   background-color: #fff;
   font-size: 1.25rem;
   margin: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
  }
 
  .benefits .content-wrapper {
@@ -298,7 +305,8 @@ footer p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-content: center;
+  text-align: center;
   width: 100%;
   margin: 15px 15px;
  }
@@ -311,8 +319,10 @@ footer p {
 
  .benefits-items {
   display: flex;
+  justify-content: center;
   flex-flow: row wrap; 
   gap: 15px;
+  margin-left: 25px;
  }
 
 .benefits-items article {
@@ -347,6 +357,12 @@ footer p {
 
  .reviews {
   font-size: 1.25rem;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
  }
 
  .reviews .content-wrapper {
