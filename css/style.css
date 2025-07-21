@@ -774,12 +774,30 @@ footer p {
    Modify as content requires.
    ========================================================================== */
    @media (max-width: 768px) {
+
+    /*--Global Styles--*/
+    header figure {
+      width: 33%;
+    }
+    }
     .practice-area {
       width: 100%; /* Stack on smaller screens */
     }
-/***** Tablet Styles *****/
 
-/***** Desktop Styles *****/
+    @media only screen and (min-width: 768px) {
+    /***** Tablet Styles *****/
+  
+  }
+
+
+    @media only screen and (min-width: 1200px) {
+
+    /***** Desktop Styles *****/
+
+    /*----About Styles----*/
+
+    
+  }
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
