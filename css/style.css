@@ -861,8 +861,15 @@ footer p {
 
   /*-----Services Page Styles----*/
 
-  .practice-area {
+  .practice-area-grid {
     width: 100%; /* Stack on smaller screens */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .practice-area {
+    width: 90%;
   }
 }
 
