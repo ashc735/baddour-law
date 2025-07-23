@@ -851,6 +851,14 @@ footer p {
     width: 90%;
   }
 
+  /*----About Page Styles----*/
+
+  .bio-main {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+  }
+
   /*-----Services Page Styles----*/
 
   .practice-area {
