@@ -892,6 +892,8 @@ footer p {
 
   .map-hours figure {
     width: 90%;
+    display: flex;
+    justify-content: center;
   }
 }
 
