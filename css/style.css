@@ -792,7 +792,15 @@ footer p {
   .hero-area {
     width: 100%;
     margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
+  .hero-area .content-wrapper {
+    width: 100%;
+    margin: 0;
+  }
+
   .benefits-items {
     display: flex;
     flex-flow: row wrap;
