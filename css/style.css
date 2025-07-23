@@ -773,7 +773,6 @@ footer p {
 
   header figure img {
     width: 100%;
-    padding: 5px 5px;
   }
 
   header nav ul {
@@ -789,6 +788,11 @@ footer p {
     margin: 0;
   }
   /*----Home Page Styles----*/
+
+  .hero-area {
+    width: 100%;
+    margin: 0;
+  }
   .benefits-items {
     display: flex;
     flex-flow: row wrap;
