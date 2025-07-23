@@ -784,7 +784,7 @@ footer p {
       width: 100%; /* Stack on smaller screens */
     }
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 769px) {
     /***** Tablet Styles *****/
   
   }
